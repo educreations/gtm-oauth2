@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.dependency   'GTMHTTPFetcher'
   s.frameworks = 'Security', 'SystemConfiguration'
+  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'GTM_OAUTH2_USES_OPENIDCONNECT=1' }
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
 
